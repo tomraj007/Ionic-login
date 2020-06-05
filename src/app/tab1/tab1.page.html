@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SHAPE DETAILS 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card"  *ngIf ="authenticated != true">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Welcome to Shapes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>A shape is the form of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture or material type. It is called "Aakriti" in hindi language.</p>
+      <ion-button margin-top (click)="signIn()" *ngIf="!authenticated">Login</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card class="welcome-card"  *ngIf ="authenticated">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-title> Triangle Shape Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Triangles can be classified according to the lengths of their sides: An equilateral triangle has all sides the same length. An equilateral triangle is also a regular polygon with all angles measuring 60°. An isosceles triangle has two sides of equal length.
+        Internal angle (degrees): 60°
+        Dual polygon: Self
+        Edges and vertices: 3</p>
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card *ngIf="authenticated">
+    <ion-card-header>
+      <!-- <ion-button (click)="getUserInfo()">Get User Details</ion-button> -->
+      <ion-button (click)="signOut()">Sign Out</ion-button>
+    </ion-card-header>
+
+    <!-- <ion-card *ngIf="userInfo">
+      <ion-card-header>
+        User Info
+      </ion-card-header>
+      <ion-card-content>
+        {{userInfo | json}}
+      </ion-card-content>
+    </ion-card> -->
+    <!-- <ion-card *ngIf="action">
+      <ion-card-header>
+        Action Data
+      </ion-card-header>
+      <ion-card-content>
+        {{action | json}}
+      </ion-card-content>
+    </ion-card> -->
+  </ion-card>
+</ion-content>

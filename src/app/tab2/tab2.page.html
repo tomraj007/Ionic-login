@@ -1,0 +1,60 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SHAPE DETAILS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card"  *ngIf ="authenticated != true">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <ion-card-title>Welcome to Shapes</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>A shape is the form of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture or material type. It is called Aakriti in hindi language.</p>
+          <ion-button margin-top (click)="signIn()" *ngIf ="authenticated != true">Login</ion-button>
+        </ion-card-content>
+      </ion-card>
+    
+    
+      <ion-card class="welcome-card"  *ngIf ="authenticated">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <ion-card-title> Circle Shape Details</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>A circle is the set of points in a plane that are equidistant from a given point . The distance from the center is called the radius, and the point is called the center. Twice the radius is known as the diameter . The angle a circle subtends from its center is a full angle, equal to or. radians.</p>
+    
+        </ion-card-content>
+      </ion-card>
+
+
+
+  <ion-card *ngIf="authenticated">
+    <ion-card-header>
+
+      <ion-button (click)="signOut()">Sign Out</ion-button>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
