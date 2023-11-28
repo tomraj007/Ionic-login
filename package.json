@@ -26,7 +26,7 @@
         "@ionic/angular": "^5.0.0",
         "@ionic/pro": "2.0.4",
         "@ionic/storage": "2.2.0",
-        "@oktadev/schematics": "^2.1.1",
+        "@oktadev/schematics": "^6.2.0",
         "ionic-appauth": "0.5.1",
         "rxjs": "~6.5.1",
         "tslib": "^1.10.0",
@@ -34,7 +34,7 @@
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.901.5",
-        "@angular/cli": "~9.1.5",
+        "@angular/cli": "~16.1.4",
         "@angular/compiler": "~9.1.6",
         "@angular/compiler-cli": "~9.1.6",
         "@angular/language-service": "~9.1.6",
